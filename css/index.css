@@ -1,0 +1,320 @@
+html,
+body {
+    height:100%;
+}
+a,a:active{
+    color:#333;
+    text-decoration:none;
+    outline:none;
+}
+/*float clear*/
+.clear:after {
+    content: "\200c";
+    display :block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+}
+.none{
+    display:none;
+    overflow:hidden;
+}
+
+a,button,
+input[type=submit],
+input[type=button]{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+body {
+    color:#333;
+    font-family:"Microsoft YaHei", Arial, Verdana, serif;
+    font-size:14px;
+    line-height:1.4;
+    -webkit-user-select:none; /* 禁止选择 */
+    -webkit-touch-callout:none; /* 禁用弹出 */
+}
+
+.wrapper{
+    width:100%;
+    display:block;
+    min-width:320px;
+}
+
+#wrap{
+    position:relative;
+    min-height:100%;
+    max-height:100%;
+    overflow:hidden;
+}
+
+#pages{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+.page{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+/*-- first page start --*/
+#firstpage {
+    width:100%;
+    height:100%;
+}
+
+#backimg {              /*-- 设置背景图片自适应浏览器大小 --*/
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+#backimg img {       /*-- 设置背景图片自适应浏览器大小 --*/
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+}
+
+#mask {
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:1;
+    background-color:rgb(45,45,45);
+    opacity:0.3;
+}
+
+#brandimg {
+    z-index:3;
+    margin-top:150px;
+    margin-left:auto;
+    margin-right:auto;
+    width:750px;
+    height:260px;
+}
+
+#bigslider  {
+    position:absolute;
+    width:100%;
+    top:0;
+    z-index:5;
+}
+
+#bigslider a{
+    margin-left:30px;
+    margin-right:30px;
+    margin-top:250px;
+    font-size:40px;
+    color:white;
+}
+
+#Big_Slide_Last {
+    float:left;
+}
+#Big_Slide_Next {
+    float:right;
+}
+
+/*-- first page end --*/
+
+/*-- download page start --*/
+#downloadpage {
+    width:100%;
+    height:100%;
+    background-color: rgb(247,247,247);
+}
+
+#downloadpage img {
+    width:850px;
+    height:420px;
+    margin:15px auto;
+}
+
+
+#buttons .btn {
+    padding-left:20px;
+    padding-right:20px;
+    line-height:2;
+    font-size:16px;
+}
+
+
+.downapp {
+    margin-left:15px;
+    font-weight: bold;
+}
+
+#androiddown {
+    background-color: rgb(199,199,199);
+}
+
+#iosdown {
+    margin-left:300px;
+}
+/*-- download page end --*/
+
+
+
+/*-- icon page start --*/
+
+#iconpage {
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+
+#iconpage table {
+    width:100%;
+}
+
+#iconpage table td {
+    padding:20px;
+}
+
+#iconpage img {
+    width:150px;
+    height:150px;
+    display:block;
+    margin:0 auto;
+}
+
+#iconpage .icontitle{
+    margin-top:10px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+#iconpage .iconintro {
+    font-size:14px;
+    line-height:20px;
+}
+
+/*-- show page start --*/
+#showpage {
+    width:100%;
+    height:100%;
+    background-color: rgb(247,247,247);
+}
+
+#showpage img {
+    width:100%;
+    max-width:100%;
+    height:auto;
+    max-height:520px;
+}
+/*-- show page end --*/
+
+/*-- about us page start --*/
+#aboutuspage {
+    width:100%;
+    height:100%;
+}
+
+#bgimg {              /*-- 设置背景图片自适应浏览器大小 --*/
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:rgb(145,145,145);
+    opacity:0.5;
+    z-index:1;
+}
+
+#testuse {       /*-- 设置背景图片自适应浏览器大小 --*/
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#leftabout {
+    position: absolute;
+    top:20px;
+    left:50px;
+    z-index:5;
+}
+
+#leftabout img {
+    width:300px;
+    height:300px;
+}
+
+#introus {
+    position:absolute;
+    top:160px;
+    right:80px;
+    width:240px;
+    text-align:right;    /*-- 实现图片右对齐 --*/
+    z-index:5;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space:normal;     /*-- 实现div内段落自动换行，防止超出 --*/
+}
+
+#introus img {
+    width:80px;
+    height:80px;
+    margin-bottom:10px;
+}
+
+#introus p {
+    text-align:left;
+    color:rgb(247,247,247);
+    line-height:24px;
+}
+
+/*-- about us page end --*/
+
+
+/*-- footer page start --*/
+#footerpage {
+    width:100%;
+    heigth:100%；
+}
+
+#footerlogo {
+    margin-top:100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.footer {
+    background-color: rgb(64,64,64);
+    position:absolute;
+    width:100%;
+    height:100px;
+    margin:0;
+    bottom:0;     /*-- 这个属性很关键 设置在其包含元素底边缘之上0像素高的位置 --*/
+    letter-spacing:normal;
+    word-spacing:normal;
+    color:white;
+}
+
+.footer  p {
+    padding:10px 0;
+    margin:0;  /*-- 消除bootstrap默认的margin-bottom --*/
+    font-size:14px;
+    font-weight:bold;
+}
+
+.footer li {
+    font-size:10px;
+    line-height:16px;
+}
+
+.footer a {
+    color:white;
+}
+
+/*-- footer page end --*/
+
